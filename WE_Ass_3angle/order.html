@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+</head>
+<body>
+    <div id="body">
+        <nav class="nav_bar">
+            
+            <ul>
+                <li ><img src="img/logo.png" alt="company logo"></li>
+                <div class="nav_r_item">
+                    <li class="nav_item" ><a href="index.html" id="home_nav">Home</a></li>
+                    <li class="nav_item" ><a href="#my_about" id="about_nav">About</a> </li>
+                    <li class="nav_item" ><a href="#my_gallery" id="gallery_nav">Gallery</a></li>
+                    <li class="nav_item" ><a href="#my_contact" id="contact_nav">Contact</a></li>
+                    <li class="nav_item" ><a href="#my_form" id="login_nav">Login</a></li>
+                </div>
+            </ul>
+        </nav>
+        <div class="order_form" >
+            <form action="order.html">
+            <div class="row ">
+            
+               
+                  <div class="col-50 order_details"> 
+                  <h3>Order Details</h3>
+                    <label for="file">Upload your file here</label>
+                    <input type="file" name="3dFile" id="">
+                    
+                    <label for="material">Select your printing material</label>
+                    <select name="materials">
+                            <option value="mat1">mat1</option>
+                            <option value="mat2">mat2</option>
+                            <option value="mat3">mat3</option>
+                            <option value="mat4">mat4</option>
+                    </select> 
+                    <br>
+                    <label for="size">specify size</label>
+                    <input type="text" placeholder="size here">
+
+                    <label for="quantity" >specify quantity</label>
+                    <input type="text" placeholder="quantity here">
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="address">shipping address</label>
+                    <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                
+                    <label for="city"><i class="fa fa-institution"></i> City</label>
+                      <input type="text" id="city" name="city" placeholder="New York">
+            
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="state">State</label>
+                          <input type="text" id="state" name="state" placeholder="NY">
+                        </div>
+                        <div class="col-25">
+                          <label for="zip">Zip</label>
+                          <input type="text" id="zip" name="zip" placeholder="10001">
+                        </div>
+                      </div>
+                </div>
+              <div class="col-25 help">
+                <a href="img/Help.png">Form Help <i class="far fa-question-circle"></i></a>
+              </div>
+            
+          </div>
+        </form>
+            
+                <!--- payment form -->
+                <form action="order.html">
+            <div class="row">
+            
+                    <div class="col-25 billing_add">
+                      <h3>Billing Address</h3>
+                      <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                      <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                      <input type="text" id="email" name="email" placeholder="john@example.com">
+                      <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                      <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                      <label for="city"><i class="fa fa-institution"></i> City</label>
+                      <input type="text" id="city" name="city" placeholder="New York">
+            
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="state">State</label>
+                          <input type="text" id="state" name="state" placeholder="NY">
+                        </div>
+                        <div class="col-25">
+                          <label for="zip">Zip</label>
+                          <input type="text" id="zip" name="zip" placeholder="10001">
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="col-25 payment_detail">
+                      <h3>Payment</h3>
+                      <label for="fname">Accepted Cards</label>
+                      <div class="icon-container">
+                        <i class="fa fa-cc-visa" style="color:navy;"></i>
+                        <i class="fa fa-cc-amex" style="color:blue;"></i>
+                        <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                        <i class="fa fa-cc-discover" style="color:orange;"></i>
+                      </div>
+                      <label for="cname">Name on Card</label>
+                      <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                      <label for="ccnum">Credit card number</label>
+                      <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                      <label for="expmonth">Exp Month</label>
+                      <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="expyear">Exp Year</label>
+                          <input type="text" id="expyear" name="expyear" placeholder="2018">
+                        </div>
+                        <div class="col-25">
+                          <label for="cvv">CVV</label>
+                          <input type="text" id="cvv" name="cvv" placeholder="352">
+                        </div>
+                      </div>
+                      
+                          <input id="shipping_check" type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+              
+                    </div>
+            
+                
+                
+                    <input type="submit" value="Continue to checkout" class="btn">
+             
+            </div> 
+          </form>
+        </div>
+        <!-- Footer start -->
+    <div class="footer">
+           
+        <p>&copy triangle copyright</p>
+        <p>privacy policy</p>
+        <div class="socialM_icons">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+    </div>
+    <!-- Footer end -->
+    </div>
+</body>
+</html>

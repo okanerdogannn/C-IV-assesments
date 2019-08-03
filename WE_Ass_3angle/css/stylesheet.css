@@ -1,0 +1,464 @@
+:root{
+  --my-green-dark: #003333;
+  --my-pink: #ffcccc;
+  --my-green-blue: #66cc99;
+  --my-green-light: #99cc33;
+  --my-gray: #cccc99;
+  --my-blue: rgb(33,50,68);
+}
+
+body{
+  margin: 0;
+}
+#body{
+    margin: 0px;
+    margin-right: 70px;
+    margin-left: 70px;
+    background-color: var(--my-gray);
+
+}
+p, h1, h2, h3 ,h4 ,h5, h6, a{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.nav_bar ul{
+    background-color: var(--my-blue);
+    list-style-type: none;
+    margin: 0;
+    padding-top: 0px; 
+    overflow: hidden;
+
+}
+li {
+    display: inline;
+    float: left;
+    text-align: center;
+    padding: 0; 
+    margin: 0;
+    height: 50px;
+    text-decoration: none;
+    
+}
+li a{
+    color: var(--my-green-blue);
+    padding: 0px 16px;
+    font-size: 17px;
+    text-decoration: none;
+}
+li a:hover{
+    color: var(--my-pink);
+    border-top: solid 1px var(--my-pink);
+    border-bottom: solid 1px var(--my-pink);
+}
+li img{
+    height: 50px;
+    width: auto;
+    left: 10px;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.nav_item{
+    height: 25px;
+    font-size: 25px;
+}
+.nav_r_item{
+    padding-top: 10px;
+    padding-right: 10px;
+    float: right;
+}
+#headerr{
+    text-align: center;
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/3d_printed_mec1.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    
+}
+#headerr h2{
+    margin: 0;
+    padding-top: 100px;
+   
+}
+div.gallery{
+    
+    
+    width: 70%;
+    padding: 60px 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gallery-bg, .about_bg{
+    background-color: var(--my-gray);
+    width: 100%;
+}
+
+table{
+    /*margin-left: 150px; */
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+td img{
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+.gal_table td{
+    background-color:  rgba(255,255,255, 20%);
+    padding: 10px 20px;
+    border-radius: 5%;
+    text-align: center;
+ 
+}
+td{
+    width: 150px;
+    height: auto;   
+}/*
+.gallery h2{
+    margin-top: 0px;
+    margin-bottom: 25px;
+    padding-top: 20px;
+    padding-left: 100px;
+}*/
+div.about{
+    width: 70%;
+    padding: 60px 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+div .about_contetn_field{
+    position: relative;
+    overflow: auto;
+    padding: 30px;
+    border-radius: 5%;
+}
+.about_contetn_field img{
+    width: 40%;
+    height: auto;
+    float: right;
+    border-radius: 2%;
+    margin: 30px;
+    margin-top: 50px;  
+}
+
+div.contact_field{
+    width: 70%;
+    padding: 60px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+div.contact_bg{
+    width: 100%;
+    height: 750px;
+    background-image: url(../img/contact.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    padding: 30px 0px;
+}
+.form_field form{
+    margin: 10px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    position: relative;
+    /*transition: all 4s ease-in-out;*/
+    width: 440px;
+    height: 520px;
+    padding:10px;
+    border: none;
+    background-color: rgba(0,0,0, 80%);
+    line-height: 24px;
+    border-radius: 10px;
+    text-align: center;
+}
+.form_field input, textarea{
+    width: 370px;
+    display: block;
+    position: relative;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: white;
+    font-size: 18px;
+    margin: auto;
+    margin-bottom: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1px;
+  }
+.form_field input{
+    height: 45px;
+}
+
+.form_field #button{
+    border-color: transparent;
+    background-color:  var(--my-green-dark);
+    color:  #FFFFFF;
+    margin-top: 40px;
+    
+}
+
+div.form_field{
+    width: 40%;
+    position: relative;
+    
+}
+div.info_field{
+    width: 350px;
+    height: 650px;
+    float: right;
+    margin-top: 50px;
+    color: #cccc99;
+   
+}
+.info_field li{
+    padding: 3px;
+    margin: 5px;
+    display: flex;
+    color: #cccc99;
+    font-size: 25px;
+}
+.info_field li p{
+    margin: 0px 10px;
+    
+}
+table.social_media{
+    padding-top: 50px; 
+}
+.social_media td{
+    
+    padding: 10px;
+    text-align: center;
+}
+.social_media i{
+    font-size: 40px;
+}
+div.footer{
+    position: relative;
+   
+    width: 100%;
+    height: 170px;
+    background-color: rgb(26, 26, 26);
+    
+}
+.footer{
+    padding-top: 10px;
+}
+.footer p{
+    text-align: center;
+    color: #cccc99;
+    font-size: 20px;
+   
+}
+.socialM_icons i{
+    color: #cccc99;
+    font-size: 30px;
+    float: right;
+    padding: 10px;
+}
+div.socialM_icons{
+    margin-right: 30px;
+}
+
+
+
+/*-------popup login------*/
+div.form-popup{box-sizing: border-box;}
+
+/* The popup form - hidden by default */
+.form-popup {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0, 70%);
+  z-index: 9;
+  justify-content: center;
+  padding-top: 100px; 
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  position: relative;
+  margin: auto;
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  border:  1px solid #003333;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/*----------------------*/
+
+/*----- order.html--------*/
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 20px 20px;
+}
+
+.order_form {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  margin: 60px 100px;
+}
+.order_details{
+  border:  3px solid #003333;
+ margin: 0px 0px;
+}
+.help{
+  margin-top: 60px;
+  text-align: center;
+  
+}
+.help a{
+  padding: 20px 40px;
+  font-size: 20px;
+  background-color: var(--my-green-light);
+  border-radius: 4%;
+  border: 2px solid var(--my-green-dark);
+  text-decoration: none;
+  color: #003333;
+}
+.help a:hover{
+  background-color: #bdeb61;
+}
+
+.billing_add{
+  border:  3px solid #003333;
+}
+.payment_detail{
+  border:  3px solid #003333;
+}
+.order_form input{
+  width: 90%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+
+}
+.order_form select{
+  width: 40%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+
+}
+.order_form input.btn{
+  width: 100%;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+#shipping_check{
+  width: 10%;
+}
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+/*------ https://www.w3schools.com/howto/howto_css_checkout_form.asp --------*/
