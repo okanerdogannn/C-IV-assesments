@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Impossible Triangle</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Da|Catamaran|Righteous|Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+    <link href='js/dist/simplelightbox.min.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="container">
+        <!-- Header start-->
+        <div class="container">
+            <!-- Logo section start -->
+            <div class="row">
+                <img src="" alt="">
+            </div>
+            <!-- Logo section end -->
+            
+            <!-- Navbar start-->
+            <nav id="my_navbar" class="navbar navbar-expand-lg">
+                <a style="padding: 0px;" class="navbar-brand" href="index.html"><img id="logo" src="img/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span id="my_toggler" class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="nav navbar-nav">
+                    <li id="nav_button" class="nav-item active">
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li id="nav_button" class="nav-item active">
+                      <a id="gallery_nav" class="nav-link" href="index.html#my_gallery">Gallery</a>
+                    </li>
+                    <li id="nav_button" class="nav-item active">
+                      <a id="about_nav" class="nav-link" href="index.html#my_about">About</a>
+                    </li>
+                    <li id="nav_button" class="nav-item active">
+                        <a id="contact_nav" class="nav-link" href="index.html#my_contact">Contact Us</a>
+                    </li>
+                    <li id="nav_button" class="nav-item active">
+                        <a id="contact_nav" class="nav-link" href="order.html">Order Now</a>
+                    </li>
+                </ul> 
+                    <ul class="nav navbar-nav justify-content-end ml-auto">
+                        <li id="nav_button" class="nav-item">
+                            <a id="singup_nav" class="nav-link active" href="#"><i class="fas fa-user"></i> Sing Up</a>
+                        </li>
+    
+                        <li id="nav_button" class="nav-item">
+                            <a id="login_nav" class="nav-link active" href="#" ><i class="fas fa-sign-in-alt"></i> Login</a>
+                        </li>
+                    </ul> 
+                </div>
+            </nav>
+            <!-- Navbar end-->
+
+        </div>
+
+        <!-- order form start -->
+        <form action="">
+            <div id="my_order_form">
+            <div class="form-row">
+                <div id="order_form" class="form group col-md-6 col-12">
+                    <h3 style="margin-bottom: 25px;">Order Form</h3>
+                    <div class="form-row">
+                       
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="customFile">
+                                <label class="custom-file-label" for="customFile">Upload your 3D Model</label>
+                            </div>    
+                    </div>  
+                    <div style="margin-top: 30px; margin-bottom: 16px;" class="form-row">
+                        <select class="custom-select">
+                            <option selected>Select your printing material</option>
+                            <option value="1">mat-1</option>
+                            <option value="2">mat-2</option>
+                            <option value="3">mat-3</option>
+                            <option value="4">mat-4</option>
+                        </select>
+                    </div>
+                        
+                    
+                        <div class="form-row">
+                            <div class="form-group col-6">
+                                <label for="inputSize">Printing Size</label>
+                                <input type="text" class="form-control" id="inputSize" placeholder="Ex: heigh 10cm, width 5cm . . .">
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="inputquantity">Quantity</label>
+                                <input type="text" class="form-control" id="inputQuantity" placeholder="Ex: 3">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-8">
+                                <label for="inputaddr">Shipping Address</label>
+                                <input type="text" class="form-control" id="inputaddr" placeholder="100/100 King st . . .">
+                            </div>
+                            <div class="form-group col-4 mt-0">
+                                    <label for="inputcity">City</label>
+                                    <input type="text" class="form-control" id="inputcity" placeholder="MEL">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                                <div class="form-group col-4 mt-0" >
+                                    <label for="inputaddr">State</label>
+                                    <input type="text" class="form-control" id="inputaddr" placeholder="VIC">
+                                </div>
+                                <div class="form-group col-4 mt-0">
+                                    <label for="inputcity">Country</label>
+                                    <input type="text" class="form-control" id="inputcity" placeholder="AU">
+                                </div>
+                                <div class="form-group col-4 mt-0">
+                                    <label for="inputcity">Zip</label>
+                                    <input type="text" class="form-control" id="inputcity" placeholder="20030">
+                                </div>
+                        </div>
+                        <div class="gallery">
+                            <a href="img/Help_doc.png"> <button id="help_button" class="btn btn-primary">HELP DOC <i class="far fa-question-circle"></i></button></a>
+                        </div>
+                        
+
+                       
+                        
+                      
+                </div>    
+                <div id="payment_form" class="form-group  col-md-5 col-12">
+                    <h3 style="margin-bottom: 25px;">Payment Form</h3>
+                    <div class="form-row">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1"><i style="font-size: 40px;" class="fab fa-cc-visa"></i></label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2"><i style="font-size: 40px;"  class="fab fa-cc-mastercard"></i></label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-12">
+                            <label for="cardName">Name on Card</label>
+                            <input type="text" class="form-control" id="cardName" placeholder="JHON SMITH">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-12">
+                            <label for="cardNo">Card Number</label>
+                            <input type="text" class="form-control" id="cardNo" placeholder="1111 2222 3333 4444">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-4">
+                            <label for="EMonth">Exp Month</label>
+                            <input type="text" class="form-control" id="EMonth" placeholder="04">
+                        </div>
+                        <div class="form-group col-4">
+                            <label for="EYear">Exp Year</label>
+                            <input type="text" class="form-control" id="EYear" placeholder="2022">
+                        </div>
+                        <div class="form-group col-4">
+                            <label for="CVV">CVV</label>
+                            <input type="text" class="form-control" id="CVV" placeholder="555">
+                        </div>            
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <button id="order_button" type="submit" class="btn btn-primary">Submit</button>
+        </div>
+            
+        </form>
+
+        <!-- order form end -->
+        <!-- Go to top button start -->
+        <div class="go_top">
+            <a id="my_go_top" href="#"><i class="fas fa-arrow-up"></i> </a>
+        </div>
+        <!-- Go to top button start -->
+    
+    <!-- Footer start -->
+    <div class="footer">
+           
+        <p>&copy triangle copyright</p>
+        <p>privacy policy</p>
+        <div class="socialM_icons">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://au.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+    <!-- Footer end -->
+  <!-- Popup login form start-->
+  
+  <div class="form-popup" id="myForm">
+    <form action="..." class="form-container">
+      <h1>Login</h1>
+    
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+    
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+    
+      <button type="submit" class="btn">Login</button>
+      <button type="submit" id="btn_cancel" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+<!-- Popup sign up form start-->
+  <div class="form-popup" id="myForm_2">
+        <form action="..." class="form-container">
+          <h1>Sing up</h1>
+          <label for="name"><b>Name</b></label>
+          <input type="text" placeholder="Your Full Name" name="name" required>
+    
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+        
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+        
+          <button type="submit" class="btn">Login</button>
+          <button type="submit" id="btn_cancel_2" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+</div>
+  
+  
+  
+  
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript" src="js/dist/simple-lightbox.js"></script>
+  <script src="js/main.js" src="js-file.js"></script>
+  <script>
+      $(function(){
+          var $gallery = $('.gallery a').simpleLightbox();
+      });
+  </script>
+</body>
+</html>
