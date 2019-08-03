@@ -1,0 +1,230 @@
+/*
+Theme Name: The Wordpress Site
+Theme URI: http://holmesglen.edu.au
+Description: A simple wordpress theme
+Author: Daniel - Late at night (mistakes may be made!)
+Author URI: http://holmesglen.edu.au
+Version: 1.0
+License: Go nuts! I don't mind!
+License URI: http://holmesglen.edu.au
+*/
+
+
+/* Open General CSS */
+a:link {
+    color: #FF6175 !important;
+}
+
+a:active {
+    color: #FF6175 !important;
+}
+
+a:visited {
+    color: #FF6175 !important;
+}
+
+a:hover {
+    color: rgb(253, 55, 82) !important;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+.display-4 {
+    font-weight: bold;
+}
+/* Close General CSS */
+
+/* Open Header CSS */
+#header {
+    background-image: url(img/headerBg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+    padding: 0px;
+}
+
+.jumbotron {
+    background-color:transparent; 
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #FF6175;
+    border-color: #FF6175;
+    font-weight: bold;
+}
+.btn-primary:hover {
+    background-color: #B23242;
+    border-color: #B23242;
+    font-weight: bold;
+}
+.btn-primary:visited {
+    background-color: #e9b52f;
+    border-color: #e9b52f;
+    font-weight: bold;
+}
+
+a.text-primary {
+    color: #FF6175;
+}
+
+a.text-primary:hover {
+    color: #FF6175;
+}
+
+a.text-primary:visited {
+    color: #FF6175;
+}
+
+.lead-serif {
+    font-family:serif;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.nav-format {
+    font-size: 0.8rem;
+}
+
+.nav-format a:link{
+    color: #fff;
+}
+.nav-format a:hover{
+    /* custom */
+    color: #FF6175;
+}
+/* Close Header CSS */
+
+/* Open Navbar */
+body {margin: 0;}
+
+div#topnav{
+    width: 100%;
+}
+#topnav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+#topnav ul li {float: left;}
+
+#topnav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#topnav ul li a:hover:not(.active) {background-color: #111;}
+
+#topnav ul li a.active {background-color: #FF6175;}
+#topnav ul li a.active {color:white!important}
+
+#topnav ul li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+    #topnav ul li.right, 
+    #topnav ul li {float: none;}
+}
+
+.logo {
+    width:30%;
+}
+/* Close Navbar */
+
+
+/* Open Goals CSS */
+.sm-serif {
+    font-family:serif;
+    font-size: 0.9rem;
+}
+.md-serif {
+    font-family:serif;
+    font-size: 1rem;
+}
+
+.lg-icons{
+    background-color: #FF6175;
+    font-size: 3rem;
+    color: #fff;
+}
+
+#services p {
+    padding: 0.8rem 0;
+}
+/* Close Goals CSS */
+
+/* Open About CSS */
+#about .rounded-circle {
+    border: 0.4rem solid lightgray;
+    width: 80%;
+}
+
+/* Close About CSS */
+
+/* Open Team CSS */
+#team .rounded-circle {
+     border: 0.4rem solid #fff;
+     width: 95%;
+}
+/* Close Team CSS */
+
+
+/* Open Contact CSS */
+#contact {
+    background-color: #222;
+    background-image: url(../img/cityLights.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+}
+
+#contact .md-serif {
+    color: #bbb !important;
+}
+/* Close Contact CSS */
+
+ul#side_list  {
+    list-style-type: none;
+    padding-top: 20px; 
+}
+
+/* Open Footer CSS */
+.bg-social {
+    background-color: #222;
+    color: #fff;
+    font-size: 1.2rem;
+    width: 2.2rem !important;
+    height: 2.2rem;
+    text-align: center;
+    border: none !important;
+}
+.bg-social:hover {
+    background-color: #FF6175;
+    color: #fff;
+    font-size: 1.2rem;
+    width: 2.2rem !important;
+    height: 2.2rem;
+    text-align: center;
+    border: none !important;
+}
+#my_footer{
+    background-color: gray;
+}
+#footermenu ul {
+    list-style-type: none;
+}
+/* Close Footer CSS */
